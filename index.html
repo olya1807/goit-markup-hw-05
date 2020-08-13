@@ -69,7 +69,16 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="mane-button">Заказать услугу</button>
+          <button class="mane-button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="button-modal-close" data-modal-close>
+              <svg class="button-modal-close-svg">
+                <use href="./images/sprite.svg#x-button"
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--О нас-->
@@ -567,5 +576,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
