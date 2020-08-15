@@ -72,6 +72,8 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus {
@@ -105,22 +107,26 @@ ul {
   display: flex;
   text-align: center;
   align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus  {
   color: var(--accent-color);
 }
+.address-icon {
+  margin-right: 10px;
+  fill: #757575;
 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .address-link:hover .address-icon {
   fill: #2196F3;
 }
 .address-link:focus .address-icon {
 fill: #2196F3;
 }
-.address-icon {
-  margin-right: 10px;
-  fill: #757575;
-}
+
 .address-nav {
   display: flex;
   align-items: center;
@@ -398,6 +404,8 @@ h3 {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-link:hover,
@@ -412,6 +420,8 @@ h3 {
   fill: #AFB1B8;
   stroke-width: 1px;
   stroke: #AFB1B8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-item-link:hover .social-list-icon-svg{
 fill:var(--white-accent-color);
@@ -461,6 +471,10 @@ stroke: var(--white-accent-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
 }
 .flex-client-link:hover,
 .flex-client-link:focus {
@@ -481,6 +495,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 fill: #AFB1B8;
+
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-logo-svg:focus {
   fill: var(--accent-color);
@@ -600,6 +616,8 @@ footer {
   justify-content: center;
   align-items: center;
   background: var(--footer-contacts-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-item-link:hover,
@@ -677,6 +695,8 @@ margin-left: 10px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -768,15 +788,14 @@ margin-left: 10px;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  
-
+  box-shadow: none;
   background-color: var(--white-accent-color);
+
+ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
 .example-photo {
   display: block;
 }
